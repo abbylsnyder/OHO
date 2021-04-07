@@ -1,0 +1,157 @@
+// @import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Open+Sans+Condensed:wght@300;700&display=swap');
+
+$title-font: 'Open Sans Condensed', sans-serif;
+$title-color: #D21533;
+$body-font: 'Cormorant Garamond', serif;
+$body-color: #222222;
+
+// * {
+//     outline: 1px dotted red;
+// } 
+
+h5 {
+    font: 100% $title-font;
+    color: $title-color;
+    font-weight: bold;
+}
+
+h6 {
+    font: 100% $title-font;
+    color: $title-color;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+p {
+    font: 100% $body-font;
+    color: $body-color;
+}
+
+.card-title, .card-text, .card-category {
+    color: white;
+}
+
+.card-img-overlay {
+    top: auto;
+}
+
+header {
+    padding: 15px;
+    text-align: left;
+    font-size: 20px;
+    color: 222222;
+    letter-spacing: 1px;
+  }
+
+.card {
+    margin-bottom: 30px;
+    border: none;
+}
+
+.space {
+    margin-bottom: 20px;
+}
+
+body {
+    padding-bottom: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.folder-grey {
+    display: none;
+}
+
+// if a screen is 667px or less wide
+@media screen and (max-width: 667px) {
+    .text {
+      display: none;
+    }
+
+    .title {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .category {
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    //trying to get header to align
+    #header {
+      padding: 10px 0px 10px 0px;
+    }
+  
+    .card-img-overlay {
+      position: relative;
+      top: auto;
+    }
+  
+    .card-title {
+      font: 100% "Open Sans Condensed", sans-serif;
+      color: #D21533;
+      font-weight: bold;
+    }
+  
+    .card-category {
+      font: 100% "Open Sans Condensed", sans-serif;
+      color: #D21533;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  
+    .card-text {
+      font: 100% "Cormorant Garamond", serif;
+      color: #222222;
+    }
+
+    .folder-white {
+        display: none;
+      }
+   
+    .folder-grey{
+        display: inline-block;
+      }
+
+   .mobile-image{
+        flex: 40%;
+        max-width: 30%;
+   }
+
+//    //take category and title to the right side of the image    
+    .mobile-content > span > h6 {
+        position: relative;
+        top: auto;
+        left: 160px;
+        bottom: 80px;
+        max-width: fit-content;
+        vertical-align: middle;
+
+    }
+
+    .mobile-content > span > h5 {
+        position: relative;
+        top: auto;
+        left: 160px;
+        bottom: 80px;
+        max-width: fit-content;
+        vertical-align: middle;
+
+    }
+//   .mobile-content p {
+//     float: right;
+//   }
+    // .div.col-sm, .div.col-sm-4 {
+    //     float:right;
+    // }
+
+    // div > span {
+    //     background-color: DodgerBlue;
+    // }
+  }
+  
